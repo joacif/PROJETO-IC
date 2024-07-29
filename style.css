@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+
+    height: 60px;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.header-buttons {
+    margin-left: auto; /* empurra os botões para a direita */
+    display: flex; /* coloca os botões em linha */
+    
+
+}
+
+.header-buttons button {
+    background-color: #333; /* cor de fundo */
+    color: white; /* cor do texto */
+    border: none; /* sem borda */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 0.5rem 0.2rem; /* espaçamento interno */
+    margin-left: 1rem; /* espaço entre os botões */
+    cursor: pointer; /* cursor de mão ao passar por cima */
+    transition: background-color 0.3s ease; /* efeito de transição */
+    
+}
+
+.header-buttons button:hover {
+    background-color: #555; /* cor ao passar o mouse */
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-right: 0px; /* Aumenta o espaço à direita do logotipo */
+    margin-top: 5px;
+}
+
+.header-line {
+    background-color: #FE8330; 
+    height: 5px; 
+    width: 100%;
+}
+
+.minha-igreja {
+    width: 100%; 
+    background-color: #eaeaea; 
+    padding: 20px; 
+    text-align: left; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-bottom: 1px solid black; /* Linha preta na parte inferior */
+}
+
+nav ul {
+    padding-left: 0;
+    width: 1000;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li.home-button a {
+    
+    padding: 0.75rem 1.25rem; /* Tamanho do padding */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.1rem;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Estilizando o ícone de home */
+nav ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.header-buttons img {
+    height: 30px; /* Ajuste a altura do ícone conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.sac-button img{
+    height: 20px;
+    width: auto
+
+}
+
+.lado-a-lado {
+    display: flex; /* Flexbox para colocar os botões em linha */
+    height: 100px;
+    justify-content: space-between; /* Espaçamento entre os botões */
+    align-items: center;
+    margin: 2px 0; /* Margem acima e abaixo */
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.div-item {
+    margin: 0; /* Remove margem para encostar os botões */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    height: 70px; /* Altura dos botões */
+    width: 30%; /* Largura dos botões */
+    display: flex;
+    flex-direction: column; /* Empilhar ícone acima do texto */
+    align-items: center; /* Centralizar ícone e texto */
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+}
+
+.div-item:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+.left {
+    margin-right: 1rem; /* Espaçamento à direita do grupo esquerdo */
+}
+
+.right {
+    margin-left: 1rem; /* Espaçamento à esquerda do grupo direito */
+}
+
+/* Estilos específicos para cada ID */
+#celulas {
+    background-color: rgb(182, 51, 51); /* Vermelho */
+    color: white;
+    margin-right: 0;
+    margin-left: 5px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 15px;
+}
+
+#celulas:hover{
+    background-color: rgb(255, 62, 62);
+}
+
+#ped_oracao {
+    background-color: orange; /* Amarelo */
+    color: white;
+    margin-right: 0;
+    font-size: 15px;
+}
+
+#ped_oracao:hover{
+    background-color: rgb(250, 190, 78);
+}
+
+#meus_dados {
+    background-color: rgb(58, 58, 163); /* Azul escuro */
+    color: white; /* Texto em branco para melhor contraste */
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 15px;
+}
+
+#meus_dados:hover{
+    background-color: rgb(89, 89, 172);
+}
+
+#usuarios {
+    background-color: rgb(91, 184, 91); /* Verde */
+    color: white;
+    margin-right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 15px;
+}
+
+#usuarios:hover{
+    background-color: rgb(116, 179, 116); 
+}
+
+#config {
+    background-color: rgb(58, 150, 180); /* Azul claro */
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+#config:hover{
+    background-color: rgb(101, 162, 182);
+}
+
+#agenda {
+    background-color: white; /* Branco */
+    color: black;
+    margin-left: 0;
+    margin-right: 5px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 15px;
+}
+
+#agenda:hover{
+    background-color: rgb(168, 168, 168);
+}
+
+main {
+    display: flex;
+    height: 645px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+
+}
+
+#div_direita {
+    height: 100%;
+    width: 31%;  
+    margin-right: 20px; 
+}
+
+#div_meio{
+    height: 100%;
+    width: 31%;
+
+}
+
+#div_esquerda{
+    height: 100%;
+    width: 31%;
+    margin-left: 20px;
+}
+
+.divs_esquerda{
+    height: 35%;
+    background-color:  #eaeaea;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.1px solid rgb(119, 118, 118);
+    
+}
+
+.divs_meio{
+    background-color: #eaeaea;
+    height: 95%;
+    margin-top: 20px;
+    border: 0.1px solid rgb(119, 118, 118);
+
+}
+
+.divs_direita{
+    height: 30%;
+    background-color: #eaeaea;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.1px solid rgb(119, 118, 118);
+
+}
+
+.titulo_div{
+    display: flex;
+    background-color: #d4d4d4;
+    margin-top: 0;
+    border-bottom: 0.1px solid rgb(184, 184, 184);
+    height: 45px;
+    font-size: 8px;
+    align-items: center;
+    
+    
+}
+
+.titulo_div h1 {
+    font-weight: normal;
+    margin-top: 1px;
+    
+}
+
+h1{
+   width: 100%;
+   height: 100%;
+   text-indent: 20px;
+}
+
+#titulo_esquerda{
+    background-color: rgb(232, 219, 193);
+}
+
+#titulo_meio{
+    background-color: rgb(180, 199, 180);
+}
+
+#titulo_direita{
+    background-color: rgb(185, 199, 213);
+}
+
+h2{
+    margin-top: 20px;
+    text-align: center; /* Centraliza o texto "Jan à Dez de 2015" */
+}
+
+p{
+    text-align: center; /* Centraliza o texto "Todas as redes" */
+    
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha as tabelas à esquerda */
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1rem;
+    min-width: 300px;
+    width: 90%;
+}
+
+.styled-table thead tr {
+    background-color: orange;
+    color: white;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 3px 5px;
+}
+
+
+.styled-table tbody tr {
+    border: 1px solid #747474;
+}
+
+
+/* Estilizando o rodapé */
+footer {
+    height: 50px;
+    background: #eeebeb;
+    color: black;
+    text-align: left;
+    padding: 1rem 2rem; 
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+/* Estilo para os números destacados */
+.number-circle {
+    display: inline-block;
+    background-color: #717171; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    width: 25px; /* Largura fixa */
+    height: 25px; /* Altura fixa */
+    text-align: center; /* Centralizar texto horizontalmente */
+    vertical-align: middle; /* Alinhar verticalmente */
+    border-radius: 50%; /* Tornar círculo */
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    line-height: 25px; /* Alinhar texto verticalmente */
+    margin-right: 5px; /* Espaçamento entre números */
+  }
+  
